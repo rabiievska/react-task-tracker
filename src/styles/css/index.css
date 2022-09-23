@@ -31,7 +31,7 @@ a {
 
 /* sources https://unsplash.com/photos/c9OCWLka764 */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,7 +309,10 @@ li:nth-child(7) {
   top: 40%;
   left: 60%; }
 
-h1, h3, p, label {
+h1,
+h3,
+p,
+label {
   color: whitesmoke; }
 
 @keyframes particleAnimation {
@@ -318,8 +321,8 @@ h1, h3, p, label {
   50% {
     transform: translateY(500px); }
   to {
-    left: calc( 100% + 100px);
-    top: calc( 100% + 100px); } }
+    left: calc(100% + 100px);
+    top: calc(100% + 100px); } }
 
 @keyframes tothetop {
   from {
