@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react';
-import PropTypes from 'prop-types'
-import Button from './Button'
+// import { render } from '@testing-library/react';
+import PropTypes from 'prop-types';
+import Button from './Button';
 
 const Header = ({ title }) => {
   const onClick = () => {
