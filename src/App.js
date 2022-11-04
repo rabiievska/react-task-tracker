@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Tasks from './components/Tasks';
-import AddTask from "./components/AddTask";
+import AddTask from './components/AddTask';
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -76,10 +76,10 @@ function App() {
 
   return (
     <Router>
-      <div className="container">
+      <div className='container'>
         <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
         <Routes>
-          <Route path="/" element={
+          <Route path='/' element={
             <>
               {showAddTask && <AddTask onAdd={addTask} />}
               {tasks.length > 0 ? (
@@ -90,7 +90,7 @@ function App() {
             </>
           }
           />
-          <Route path="/about" element={<About />} />
+          <Route path='/about' element={<About />} />
         </Routes>
         <Footer />
       </div>
